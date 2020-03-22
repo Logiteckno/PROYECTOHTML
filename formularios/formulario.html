@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <a href="/index.html">inicio</a>
+    <h1>Formularios</h1>
+    <form autocomplete="off">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <div>
+                <label>Ingresa tu nombre <input id="username" name="name" placeholder="Ingresa tu usuario">  </label>
+            </div>
+            <div>
+                <label>Correo: <input type="email" name="email" id="email"></label>
+            </div>
+            <div>
+                <label >Ingresa contraseña <input id='pass' type="password" name="password" required></label>
+            </div>        
+        </fieldset>
+        <fieldset>
+            <legend>Datos de contacto</legend>            
+            <div>
+                <label>Fecha de nacimiento <input type="date" name="fecha" id="fecha" ></label>
+            </div>
+            <div>
+                <label>Telefono <input type="tel" name="telefono" id="telefono" value="5565458730" disabled></label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Tus pasatiempos</legend>
+            <label>Jugar <input type="checkbox" name="pasatiempo"><label>
+            <label>Dormir <input type="checkbox" name="pasatiempo"><label>
+            <label>Soñar <input type="checkbox" name="pasatiempo"><label>
+        </fieldset>        
+        <fieldset>
+            <legend>Genero</legend>
+            <label>Femenino <input type="radio" name="genero"></label>
+            <label>Masculino <input type="radio" name="genero"></label>
+            <label>No definido <input type="radio" name="genero"></label>
+        </fieldset>    
+        <fieldset>
+            <legend>Domicilio</legend>
+            <label for="country">Escoge tu país</label>
+            <select name="country" id="country">
+                <optgroup label="America">
+                    <option value="México">México</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Chile">Chile</option>
+                </optgroup>
+                <optgroup label="Europa">
+                    <option value="México">España</option>
+                    <option value="Colombia">Italia</option>
+                    <option value="Chile">Portugal</option>
+                </optgroup>
+                <textarea name="mensafe" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+            </select>
+        </fieldset>
+
+        <input type="submit" value="Enviar">    
+    </form>
+    <!-- <script>
+        document.getElementById('username').addEventListener('keyup',e=>{
+            console.log(e.target.value)
+        })
+        document.getElementById('pass').addEventListener('keyup',e=>{
+            console.log(e.target.value)
+        })
+    </script> -->
+</body>
+</html>

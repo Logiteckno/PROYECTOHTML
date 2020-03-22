@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <table border="1">
+        <caption>Mi horario de clases</caption>
+        <colgroup>        
+        <col span="2"  >
+        <col style="background: aqua;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <TBody>
+            <tr>
+                <td>HTML</td>
+                <td>Phyton</td>
+                <td>C++</td>
+                <td>Java</td>
+                <td>PHP</td>
+            </tr>
+            <tr>
+                <td>SQL</td>
+                <td rowspan="2">Angular</td>
+                <td>Laravel</td>
+                <td>Docker</td>
+                <td rowspan="2">Perl</td>
+            </tr>
+            <tr>
+                <td>GO</td>
+                
+                <td>CSS</td>
+                <td>HTML</td>
+                
+            </tr>
+            <tr>
+                <td colspan="5" >Recreo</td>
+            </tr>
+        </TBody>
+        <tfoot >
+            <tr>
+                <td>20</td>
+                <td>30</td>
+                <td>40</td>
+                <td>35</td>
+                <td>15</td>
+            </tr>
+        </tfoot>
+    </table>    
+</body>
+</html>
