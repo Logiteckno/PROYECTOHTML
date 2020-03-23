@@ -7,5 +7,22 @@
 </head>
 <body>
     <a href="/index.html">Inicio</a>
+    <video src="conejo.mp4" controls poster="/img/play.png"></video>
+    <video id="video" src="conejo.mp4" controls poster="/img/play.png"></video>
+    <button id="play">Play</button>
+    <button id="pause">Pause</button>
+    <script>
+        const video = document.getElementById('video');
+        const play = document.getElementById('play');
+        const pause = document.getElementById('pause');
+
+        play.addEventListener('click', ()=>{
+            video.play()
+        })
+
+        pause.addEventListener('click', ()=>{
+            video.pause()
+        })
+    </script>
 </body>
 </html>

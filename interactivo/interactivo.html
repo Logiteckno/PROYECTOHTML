@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteactivo</title>
+</head>
+<body>   
+    <a href="/index.html">Inicio</a>
+    <dialog id="modal">
+        <h2>Cuso HTML desde 0</h2>
+        <p>precio: 50</p>
+        <p>Que chido</p>
+    </dialog>
+    <button id="abrir">Abrir modal</button>
+    <button id="cerrar">Cerrar modal</button>
+    <h1>Contenido interactivo</h1>
+    <details>
+        <summary>HTML</summary>
+        <p>Lengiaje de marcado</p>
+    </details> 
+    <script>
+        const modal = document.getElementById('modal');
+        const abrir = document.getElementById('abrir');
+        const cerrar = document.getElementById('cerrar');
+        abrir.addEventListener('click', ()=>{
+            modal.setAttribute('open','true');
+        })
+        cerrar.addEventListener('click', ()=>{
+            modal.removeAttribute('open');
+        })
+    </script>   
+    <h1>Video de youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Vp4e1Xq3JiI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
